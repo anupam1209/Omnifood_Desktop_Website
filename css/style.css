@@ -53,19 +53,10 @@ body {
         color: #555;
 }
 
-.section-hero {
-        background-color: #fdf2e9;
-        padding: 9.6rem 4.8rem;
-}
 
-.hero {
-        max-width: 130rem;
-        margin: 0 auto;
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        gap: 9.6rem;
-        align-items: center;
-}
+/* ***************************** */
+/* GENERAL REUSABLE COMPONENTS */
+/* ***************************** */
 
 .heading-primary {
         font-size: 5rem;
@@ -77,11 +68,6 @@ body {
 
 }
 
-.hero-description {
-        font-size: 1.5rem;
-        line-height: 1.6;
-        margin-bottom: 4.8rem;
-}
 
 .btn:link,
 .btn:visited {
@@ -131,13 +117,64 @@ body {
 }
 
 
+.margin-right-sm{
+        margin-right: 1.6rem !important;
+}
+
+/* ***************************** */
+/* HEADER */
+/* ***************************** */
+
+.header{
+        display: flex;
+        /* trick to push both at the end sides */
+        justify-content: space-between;
+        align-items: center;
+        background-color: #fdf2e9;
+
+        /* because we want header to be sticky later */
+        height: 8.0rem;
+        padding: 0 4.8rem;
+}
+
+.logo{
+        height: 2.2rem;
+}
+
+
+/* ***************************** */
+/* HERO SECTION */
+/* ***************************** */
+
+.section-hero {
+        background-color: #fdf2e9;
+        padding: 3.2rem 4.8rem;
+}
+
+.hero {
+        max-width: 130rem;
+        margin: 0 auto;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 9.6rem;
+        align-items: center;
+}
+
+
+
+.hero-description {
+        font-size: 1.5rem;
+        line-height: 1.6;
+        margin-bottom: 4.8rem;
+}
+
+
+
 .hero-img {
         width: 100%;
 }
 
-.margin-right-sm{
-        margin-right: 1.6rem !important;
-}
+
 
 .delivered-meals{
         display: flex;
