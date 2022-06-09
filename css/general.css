@@ -123,7 +123,7 @@ body {
 .heading-secondary{
     font-size: 3.8rem;
     line-height: 1.2;
-    margin-bottom: 7.6rem;
+    margin-bottom: 5.6rem;
 }
 
 .heading-tertiary{
@@ -155,7 +155,8 @@ body {
     font-weight: bold;
 
     /* put transition in original "state" */
-    transition: background-color 0.3s;
+    /* transition: background-color 0.3s; */
+    transition: all 0.3s;
 }
 
 .btn--full:link,
@@ -190,7 +191,38 @@ body {
 
 }
 
+.link:link,
+.link:visited{
+    display: inline-block;
+    color: #e67e22;
+    text-decoration: none;
+    border-bottom: 1px solid currentColor;
+    padding-bottom: 2px;
+    
+
+    transition: all 0.3s;
+}
+
+.link:hover,
+.link:visited{
+    color: #cf711f;
+    border-bottom: 1px solid transparent;
+}
+
+/* HELPER/SETTINGS CLASSES */
 
 .margin-right-sm {
     margin-right: 1.6rem !important;
+}
+
+.margin-bottom-md{
+    margin-bottom: 4.8rem !important;
+}
+
+.center-text{
+    text-align: center;
+}
+
+strong{
+    font-weight: 500;
 }
