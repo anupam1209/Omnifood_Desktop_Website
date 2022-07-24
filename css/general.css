@@ -42,7 +42,7 @@
         Default: 1
         Small:   1.05
         Medium:  1.2
-      Paragraph: 1.6
+        Paragraph: 1.6
 
 */
 
@@ -57,6 +57,7 @@ html {
        10px/16px = 0.625 = 62.5%     */
     /* percentage of user's broweser font-size setting     */
     font-size: 62.5%;
+    overflow-x: hidden;
 }
 
 body {
@@ -64,6 +65,9 @@ body {
     line-height: 1;
     font-weight: 400;
     color: #555;
+    /* only works if nothing is absolutely positioned to 
+       in relation to body */
+    overflow-x: hidden;
 }
 
 
@@ -252,11 +256,12 @@ body {
     color: #e67e22;
 }
 
-.list-tem{
+.list-item{
     font-size: 1.5rem;
     display: flex;
     align-items: center;
     gap: 1.6rem;
+    line-height: 1.2;
 }
 
 /* NEVER EVER DO THIS, BECAUSE IT REMOVES THE ACCESSIBILTY OF THE USER WHO RELY ON KEYBOARD ONLY */
